@@ -1,0 +1,98 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .schedule-container {
+            width: 90%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table thead th {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .schedule-table tbody td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        .schedule-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .schedule-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .time-column {
+            background-color: #0073e6;
+            color: #fff;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-container {
+                width: 95%;
+            }
+
+            .schedule-table thead, .schedule-table tbody, .schedule-table th, .schedule-table td, .schedule-table tr {
+                display: block;
+            }
+
+            .schedule-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .schedule-table tr {
+                border: 1px solid #ccc;
+            }
+
+            .schedule-table td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: left;
+            }
+
+            .schedule-table td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-label);
+                color: #000;
+                font-weight: bold;
+            }
+
+            .time-column {
+                background-color: #0073e6;
+                color: #fff;
+                text-align: center;
+            }
+        }

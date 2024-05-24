@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="registration_page.css">
+            <link rel="stylesheet" type="text/css" href="main_page.css">
+
+</head>
+<body>
+    <div class="hero">
+        <!-- <div class="container">
+            <h1>CONVOCATION DAY</h1>
+            <h2>Associate Professor of Political Science</h2>
+        </div> -->
+    </div>
+    <header class="header">
+        <div class="logo">
+            <h1>CONVOCATION DAY</h1>
+        </div>
+        <nav id="nav">
+            <a href="main_page.html">Home</a>
+            <a href="schedule_page.html">Schedule</a>
+            <!-- <a href="#contact">Contact</a> -->
+        </nav>
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Add this inside the <body> tag where you want your form to appear -->
+<div class="registration-form">
+    <form action="/submit-form" method="post">
+        <h2 class="form-title">Online Registration</h2>
+        <div class="input-group">
+            <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+            <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email-address" name="email_address" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+            <input type="text" id="course-name" name="course_name" placeholder="Course Taking">
+        </div>
+        
+            </select>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+
+    <footer class="footer">
+        &copy; 2024 CONVOCATION DAY. All rights reserved.
+    </footer>
+</body>
+</html>
